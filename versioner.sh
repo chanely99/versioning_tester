@@ -60,6 +60,7 @@ echo "new patch: $new_patch"
 
 new_tag="v${new_major}.${new_minor}.${new_patch}"
 git tag -a $new_tag -m "$message"
+git push --tags
 
 #confirmation to user
 echo "New tag will be $new_tag"
